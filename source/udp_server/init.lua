@@ -29,7 +29,7 @@ local function initWifi()
 	Led.blink(1, {0, 0, 0}, {0, 255, 0}, 500)
 
 	require('connector')
-	Connector.connect(initUpgrade)
+	Connector.connect(initServer)
 end
 
 initWifi()

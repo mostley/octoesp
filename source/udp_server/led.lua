@@ -19,10 +19,10 @@ function M.blink(id, color1, color2, interval)
 	tmr.alarm(id, interval, 1, function()
 		if toggle == 0 then
 			toggle = 1
-			set_color(color1)
+			M.set_color(color1)
 		else
 			toggle = 0
-			set_color(color2)
+			M.set_color(color2)
 		end
 	end)
 end
