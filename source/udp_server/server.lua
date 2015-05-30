@@ -7,7 +7,7 @@ PORT = 6803
 PIXEL_SIZE = 3
 PIXEL_PIN = 4
 
-function M.serve()
+function M.serve(callback)
 	server = net.createServer(net.UDP)
 	server:on("receive", function(s, data)
 		print(data)
@@ -22,4 +22,6 @@ function M.serve()
 	end)
 
 	server:listen(PORT)
+
+	callback()
 end
