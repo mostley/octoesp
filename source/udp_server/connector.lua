@@ -1,5 +1,5 @@
 
-local moduleName = ...
+local moduleName = "Connector"
 local M = {}
 _G[moduleName] = M
 
