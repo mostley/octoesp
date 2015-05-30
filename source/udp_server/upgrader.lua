@@ -59,6 +59,9 @@ function M.updateFile(filename, url, callback)
 end
 
 function M.update(callback)
+    M.updateFile('init.lua', 'https://raw.githubusercontent.com/mostley/octoesp/master/source/udp_server/init.lua', callback)
+    M.updateFile('connector.lua', 'https://raw.githubusercontent.com/mostley/octoesp/master/source/udp_server/connector.lua', callback)
+    M.updateFile('upgrader.lua', 'https://raw.githubusercontent.com/mostley/octoesp/master/source/udp_server/upgrader.lua', callback)
     M.updateFile('server.lua', 'https://raw.githubusercontent.com/mostley/octoesp/master/source/udp_server/server.lua', callback)
 end
 
