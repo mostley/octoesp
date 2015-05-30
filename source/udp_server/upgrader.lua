@@ -1,5 +1,5 @@
 
-local moduleName = ...
+local moduleName = "Upgrader"
 local M = {}
 _G[moduleName] = M
 
